@@ -9,4 +9,5 @@ bitsandbytes-cuda117
 numpy
 python-dotenv
 sentencepiece 
+replicate
 
