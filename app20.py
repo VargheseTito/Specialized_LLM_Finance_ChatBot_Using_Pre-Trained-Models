@@ -30,7 +30,7 @@ with st.sidebar:
     st.markdown('📖 Learn how to build this app in this [blog](https://blog.streamlit.io/how-to-build-a-llama-2-chatbot/)!')
 
 # Load the model and tokenizer
-@st.cache_resource(allow_output_mutation=True)
+@st.cache_resource()
 def load_model_and_tokenizer():
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=hf_api_token)
     model = AutoModelForCausalLM.from_pretrained(model_name, use_auth_token=hf_api_token)
