@@ -7,14 +7,13 @@ logging.set_verbosity_error()
 
 st.title("Finance Chatbot")
 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource()
 def load_model_and_tokenizer():
     model_name = "distilgpt2"
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
     model = AutoModelForCausalLM.from_pretrained(model_name)
     return model, tokenizer
 
-@st.cache(allow_output_mutation=True)
 def generate_text(prompt, model, tokenizer, max_length=100):
     # Format the input prompt as specified
     pipe = pipeline(task="text-generation", model=model, tokenizer=tokenizer, max_length=max_length)
