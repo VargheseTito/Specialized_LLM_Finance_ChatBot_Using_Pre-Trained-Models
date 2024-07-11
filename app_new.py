@@ -9,7 +9,7 @@ st.title("Finance Chatbot")
 
 @st.cache_resource()
 def load_model_and_tokenizer():
-    model_name = "distilgpt2"
+    model_name = "tito92/finance_finetune_model"
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
     model = AutoModelForCausalLM.from_pretrained(model_name)
     return model, tokenizer
