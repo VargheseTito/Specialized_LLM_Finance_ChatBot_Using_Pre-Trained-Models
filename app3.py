@@ -7,7 +7,7 @@ logging.set_verbosity_error()
 
 st.title("Finance Chatbot")
 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource()
 def load_model_and_tokenizer():
     model_name = "tito92/finance_finetune_model"
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
