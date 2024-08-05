@@ -2,39 +2,51 @@
 ![image](https://github.com/user-attachments/assets/65df05e1-8cb0-4376-965b-25730f69a243)
 
 
-![image](https://github.com/user-attachments/assets/430d2e95-4558-409b-b542-4903b43ce8e3)
 
 
 Steps to Run the Finance Chatbot
 
-Sign In to Required Accounts
+Step-1: Sign In to Required Accounts
 
 Log in to your Hugging Face and ngrok accounts.
+
 Retrieve your access tokens from both platforms.
-Run Flask App Notebook
+
+Step-2: Run Flask App Notebook
 
 Open the flask-ngrok-app.ipynb notebook.
+
 Provide the Hugging Face and ngrok access tokens when prompted, and run the notebook.
-Set Up Development Environment
+
+Step-3: Set Up Development Environment
 
 Open Visual Studio Code (VS Code).
+
 Create a virtual environment within your project.
-Install Dependencies
+
+Step-4: Install Dependencies
 
 Use pip install to install the packages listed in the requirements.txt file.
-Run the Chatbot Script
+
+Step-5: Run the Chatbot Script
 
 In VS Code, open finetuned_llama2_chatbot.py.
+
 Open a terminal and activate the previously created virtual environment.
+
 Run the chatbot script from this terminal.
-Access the Chatbot UI
+
+Step-6: Access the Chatbot UI
 
 Click on the Streamlit UI link that appears after running the script.
+
 The chatbot interface will be displayed in your browser.
-Connect to ngrok
+
+Step-7: Connect to ngrok
 
 Paste the ngrok URL you obtained in Step 2 into the appropriate field in the chatbot UI.
-Interact with the Chatbot
+
+Step-8: Interact with the Chatbot
 
 Start chatting with the finance chatbot using the provided interface.
 
